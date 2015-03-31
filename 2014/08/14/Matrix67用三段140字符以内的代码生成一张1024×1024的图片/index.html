@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Matrix67:用三段140字符以内的代码生成一张1024×1024的图片 | SAmmer&#39;s Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="本文属于转载,原文参见Matrix67博客
+Kyle McCormick 在 StackExchange 上发起了一个叫做 Tweetable Mathematical Art 的比赛，参赛者需要用三条推这么长的代码来生成一张图片。具体地说，参赛者需要用 C++ 语言编写 RD 、 GR 、 BL 三个函数，每个函数都不能超过 140 个字符。每个函数都会接到 i 和 j 两个整型参数（0 ≤ i">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Matrix67:用三段140字符以内的代码生成一张1024×1024的图片">
+<meta property="og:url" content="hppt://sammer0.github.io/2014/08/14/Matrix67用三段140字符以内的代码生成一张1024×1024的图片/index.html">
+<meta property="og:site_name" content="SAmmer's Blog">
+<meta property="og:description" content="本文属于转载,原文参见Matrix67博客
+Kyle McCormick 在 StackExchange 上发起了一个叫做 Tweetable Mathematical Art 的比赛，参赛者需要用三条推这么长的代码来生成一张图片。具体地说，参赛者需要用 C++ 语言编写 RD 、 GR 、 BL 三个函数，每个函数都不能超过 140 个字符。每个函数都会接到 i 和 j 两个整型参数（0 ≤ i">
+<meta property="og:image" content="../../../../img/2014_08_14_1.png">
+<meta property="og:image" content="../../../../img/2014_08_14_2.png">
+<meta property="og:image" content="../../../../img/2014_08_14_3.png">
+<meta property="og:image" content="../../../../img/2014_08_14_4.png">
+<meta property="og:image" content="../../../../img/2014_08_14_5.png">
+<meta property="og:image" content="../../../../img/2014_08_14_6.png">
+<meta property="og:image" content="../../../../img/2014_08_14_7.png">
+<meta property="og:image" content="../../../../img/2014_08_14_8.png">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Matrix67:用三段140字符以内的代码生成一张1024×1024的图片">
+<meta name="twitter:description" content="本文属于转载,原文参见Matrix67博客
+Kyle McCormick 在 StackExchange 上发起了一个叫做 Tweetable Mathematical Art 的比赛，参赛者需要用三条推这么长的代码来生成一张图片。具体地说，参赛者需要用 C++ 语言编写 RD 、 GR 、 BL 三个函数，每个函数都不能超过 140 个字符。每个函数都会接到 i 和 j 两个整型参数（0 ≤ i">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+  
+    <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
+  
+  
+    <link rel="stylesheet" href="/scrollLoading/style.css" type="text/css">
+  
+  
+
+
+  
+    <style type="text/css">
+      .logo { background-image:url(http://ppoffice.github.io/hexo-theme-hueman/css/images/logo-header.png); }
+    </style>
+  
+
+  
+    <link href='//fonts.useso.com/css?family=Titillium+Web:300,400,600' rel='stylesheet' type='text/css'>
+    <link href="//fonts.useso.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+
+</head>
+
+<body>
+  <div id="wrap">
+    <header id="header">
+  <div id="header-outer" class="outer">
+    <div class="container">
+      <div class="container-inner">
+        <div id="header-title">
+          <h1 class="logo-wrap">
+            <a href="/" class="logo"></a>
+          </h1>
+          
+            <h2 class="subtitle-wrap">
+              <p class="subtitle">Walking, playing, thinking.</p>
+            </h2>
+          
+        </div>
+        <div id="header-inner" class="nav-container">
+          <a id="main-nav-toggle" class="nav-icon"></a>
+          <div class="nav-container-inner">
+            <ul id="main-nav">
+              
+                <li class="main-nav-list-item" ><a class="main-nav-list-link" href="/">Home</a></li>
+              
+                    
+                  
+                <li class="main-nav-list-item" ><a class="main-nav-list-link" href="/about/index.html">About</a></li>
+              
+            </ul>
+            <nav id="sub-nav">
+              <div id="search-form-wrap">
+                <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="搜索"><input type="hidden" name="q" value="site:hppt://sammer0.github.io"></form>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+    <div class="container">
+      <div class="main-body container-inner">
+        <div class="main-body-inner">
+          <section id="main">
+            <div class="main-body-header">
+
+              <h1 class="header">未分类</h1>
+            </div>
+            <div class="main-body-content">
+              
+  <article id="post-Matrix67用三段140字符以内的代码生成一张1024×1024的图片" class="article article-single article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+      <!--  -->
+      
+        <header class="article-header">
+          
+  
+    <h1 class="article-title" itemprop="name">
+      Matrix67:用三段140字符以内的代码生成一张1024×1024的图片
+    </h1>
+  
+
+        </header>
+      
+      <p class="article-byline">
+        <a href="/2014/08/14/Matrix67用三段140字符以内的代码生成一张1024×1024的图片/" class="article-date">
+  <time datetime="2014-08-14T15:14:59.000Z" itemprop="datePublished">08 14 2014</time>
+</a>
+      </p>
+      <div class="article-entry" itemprop="articleBody">
+        <p><strong>本文属于转载,原文参见<a href="http://www.matrix67.com/blog/archives/6039#more-6039" target="_blank" rel="external">Matrix67博客</a></strong></p>
+<p>Kyle McCormick 在 StackExchange 上发起了一个叫做 <a href="http://codegolf.stackexchange.com/questions/35569/tweetable-mathematical-art" target="_blank" rel="external">Tweetable Mathematical Art</a> 的比赛，参赛者需要用三条推这么长的代码来生成一张图片。具体地说，参赛者需要用 C++ 语言编写 RD 、 GR 、 BL 三个函数，每个函数都不能超过 140 个字符。每个函数都会接到 i 和 j 两个整型参数（0 ≤ i, j ≤ 1023），然后需要返回一个 0 到 255 之间的整数，表示位于 (i, j) 的像素点的颜色值。举个例子，如果 RD(0, 0) 和 GR(0, 0) 返回的都是 0 ，但 BL(0, 0) 返回的是 255 ，那么图像的最左上角那个像素就是蓝色。参赛者编写的代码会被插进下面这段程序当中（我做了一些细微的改动），最终会生成一个大小为 1024×1024 的图片。<br><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// NOTE: compile with g++ filename.cpp -std=c++11</span></span><br><span class="line"> </span><br><span class="line"><span class="preprocessor">#<span class="keyword">include</span> &lt;iostream&gt;</span></span><br><span class="line"><span class="preprocessor">#<span class="keyword">include</span> &lt;cmath&gt;</span></span><br><span class="line"><span class="preprocessor">#<span class="keyword">include</span> &lt;cstdlib&gt;</span></span><br><span class="line"><span class="preprocessor">#<span class="keyword">define</span> DIM 1024</span></span><br><span class="line"><span class="preprocessor">#<span class="keyword">define</span> DM1 (DIM-1)</span></span><br><span class="line"><span class="preprocessor">#<span class="keyword">define</span> _sq(x) ((x)*(x)) <span class="comment">// square</span></span></span><br><span class="line"><span class="preprocessor">#<span class="keyword">define</span> _cb(x) abs((x)*(x)*(x)) <span class="comment">// absolute value of cube</span></span></span><br><span class="line"><span class="preprocessor">#<span class="keyword">define</span> _cr(x) (unsigned char)(pow((x),1.0/3.0)) <span class="comment">// cube root</span></span></span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">unsigned</span> <span class="keyword">char</span> <span class="title">GR</span><span class="params">(<span class="keyword">int</span>,<span class="keyword">int</span>)</span></span>;</span><br><span class="line"><span class="function"><span class="keyword">unsigned</span> <span class="keyword">char</span> <span class="title">BL</span><span class="params">(<span class="keyword">int</span>,<span class="keyword">int</span>)</span></span>;</span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">unsigned</span> <span class="keyword">char</span> <span class="title">RD</span><span class="params">(<span class="keyword">int</span> i,<span class="keyword">int</span> j)</span></span>&#123;</span><br><span class="line">   <span class="comment">// YOUR CODE HERE</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">unsigned</span> <span class="keyword">char</span> <span class="title">GR</span><span class="params">(<span class="keyword">int</span> i,<span class="keyword">int</span> j)</span></span>&#123;</span><br><span class="line">   <span class="comment">// YOUR CODE HERE</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">unsigned</span> <span class="keyword">char</span> <span class="title">BL</span><span class="params">(<span class="keyword">int</span> i,<span class="keyword">int</span> j)</span></span>&#123;</span><br><span class="line">   <span class="comment">// YOUR CODE HERE</span></span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">pixel_write</span><span class="params">(<span class="keyword">int</span>,<span class="keyword">int</span>)</span></span>;</span><br><span class="line">FILE *fp;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    fp = fopen(<span class="string">"MathPic.ppm"</span>,<span class="string">"wb"</span>);</span><br><span class="line">    <span class="built_in">fprintf</span>(fp, <span class="string">"P6\n%d %d\n255\n"</span>, DIM, DIM);</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">0</span>;j&lt;DIM;j++)</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;DIM;i++)</span><br><span class="line">            pixel_write(i,j);</span><br><span class="line">    fclose(fp);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">pixel_write</span><span class="params">(<span class="keyword">int</span> i, <span class="keyword">int</span> j)</span></span>&#123;</span><br><span class="line">    <span class="keyword">static</span> <span class="keyword">unsigned</span> <span class="keyword">char</span> color[<span class="number">3</span>];</span><br><span class="line">    color[<span class="number">0</span>] = RD(i,j)&amp;<span class="number">255</span>;</span><br><span class="line">    color[<span class="number">1</span>] = GR(i,j)&amp;<span class="number">255</span>;</span><br><span class="line">    color[<span class="number">2</span>] = BL(i,j)&amp;<span class="number">255</span>;</span><br><span class="line">    fwrite(color, <span class="number">1</span>, <span class="number">3</span>, fp);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>我选了一些自己比较喜欢的作品，放在下面和大家分享。</p>
+<h5 id="首先是一个来自_Martin_Büttner_的作品：">首先是一个来自 Martin Büttner 的作品：</h5><p><img src="../../../../img/2014_08_14_1.png" alt="Martin1"><br>它的代码如下：<br><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">unsigned</span> <span class="keyword">char</span> <span class="title">RD</span><span class="params">(<span class="keyword">int</span> i,<span class="keyword">int</span> j)</span></span>&#123;</span><br><span class="line">	<span class="keyword">return</span> (<span class="keyword">char</span>)(_sq(<span class="built_in">cos</span>(<span class="built_in">atan2</span>(j-<span class="number">512</span>,i-<span class="number">512</span>)/<span class="number">2</span>))*<span class="number">255</span>);</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">unsigned</span> <span class="keyword">char</span> <span class="title">GR</span><span class="params">(<span class="keyword">int</span> i,<span class="keyword">int</span> j)</span></span>&#123;</span><br><span class="line">	<span class="keyword">return</span> (<span class="keyword">char</span>)(_sq(<span class="built_in">cos</span>(<span class="built_in">atan2</span>(j-<span class="number">512</span>,i-<span class="number">512</span>)/<span class="number">2</span>-<span class="number">2</span>*<span class="built_in">acos</span>(-<span class="number">1</span>)/<span class="number">3</span>))*<span class="number">255</span>);</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">unsigned</span> <span class="keyword">char</span> <span class="title">BL</span><span class="params">(<span class="keyword">int</span> i,<span class="keyword">int</span> j)</span></span>&#123;</span><br><span class="line">	<span class="keyword">return</span> (<span class="keyword">char</span>)(_sq(<span class="built_in">cos</span>(<span class="built_in">atan2</span>(j-<span class="number">512</span>,i-<span class="number">512</span>)/<span class="number">2</span>+<span class="number">2</span>*<span class="built_in">acos</span>(-<span class="number">1</span>)/<span class="number">3</span>))*<span class="number">255</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h5 id="同样是来自_Martin_Büttner_的作品：">同样是来自 Martin Büttner 的作品：</h5><p><img src="../../../../img/2014_08_14_2.png" alt="Martin2"><br>这是目前暂时排名第一的作品。它的代码如下：<br><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">unsigned</span> <span class="keyword">char</span> <span class="title">RD</span><span class="params">(<span class="keyword">int</span> i,<span class="keyword">int</span> j)</span></span>&#123;</span><br><span class="line">	<span class="preprocessor">#<span class="keyword">define</span> r(n)(rand()%n)</span></span><br><span class="line">	<span class="keyword">static</span> <span class="keyword">char</span> c[<span class="number">1024</span>][<span class="number">1024</span>];</span><br><span class="line">	<span class="keyword">return</span>!c[i][j]?c[i][j]=!r(<span class="number">999</span>)?r(<span class="number">256</span>):RD((i+r(<span class="number">2</span>))%<span class="number">1024</span>,(j+r(<span class="number">2</span>))%<span class="number">1024</span>):c[i][j];</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">unsigned</span> <span class="keyword">char</span> <span class="title">GR</span><span class="params">(<span class="keyword">int</span> i,<span class="keyword">int</span> j)</span></span>&#123;</span><br><span class="line">	<span class="keyword">static</span> <span class="keyword">char</span> c[<span class="number">1024</span>][<span class="number">1024</span>];</span><br><span class="line">	<span class="keyword">return</span>!c[i][j]?c[i][j]=!r(<span class="number">999</span>)?r(<span class="number">256</span>):GR((i+r(<span class="number">2</span>))%<span class="number">1024</span>,(j+r(<span class="number">2</span>))%<span class="number">1024</span>):c[i][j];</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">unsigned</span> <span class="keyword">char</span> <span class="title">BL</span><span class="params">(<span class="keyword">int</span> i,<span class="keyword">int</span> j)</span></span>&#123;</span><br><span class="line">	<span class="keyword">static</span> <span class="keyword">char</span> c[<span class="number">1024</span>][<span class="number">1024</span>];</span><br><span class="line">	<span class="keyword">return</span>!c[i][j]?c[i][j]=!r(<span class="number">999</span>)?r(<span class="number">256</span>):BL((i+r(<span class="number">2</span>))%<span class="number">1024</span>,(j+r(<span class="number">2</span>))%<span class="number">1024</span>):c[i][j];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h5 id="下面这张图片仍然出自_Martin_Büttner_之手：">下面这张图片仍然出自 Martin Büttner 之手：</h5><p><img src="../../../../img/2014_08_14_3.png" alt="Martin3"><br>难以想象， Mandelbrot 分形图形居然可以只用这么一点代码画出：<br><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">unsigned</span> <span class="keyword">char</span> <span class="title">RD</span><span class="params">(<span class="keyword">int</span> i,<span class="keyword">int</span> j)</span></span>&#123;</span><br><span class="line">	<span class="keyword">float</span> x=<span class="number">0</span>,y=<span class="number">0</span>;</span><br><span class="line">	<span class="keyword">int</span> k;</span><br><span class="line">	<span class="keyword">for</span>(k=<span class="number">0</span>;k++&lt;<span class="number">256</span>;)&#123;</span><br><span class="line">		<span class="keyword">float</span> a=x*x-y*y+(i-<span class="number">768.0</span>)/<span class="number">512</span>;</span><br><span class="line">		y=<span class="number">2</span>*x*y+(j-<span class="number">512.0</span>)/<span class="number">512</span>;</span><br><span class="line">		x=a;</span><br><span class="line">		<span class="keyword">if</span>(x*x+y*y&gt;<span class="number">4</span>)</span><br><span class="line">			<span class="keyword">break</span>;</span><br><span class="line">		&#125;</span><br><span class="line">	<span class="keyword">return</span> <span class="built_in">log</span>(k)*<span class="number">47</span>;</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">unsigned</span> <span class="keyword">char</span> <span class="title">GR</span><span class="params">(<span class="keyword">int</span> i,<span class="keyword">int</span> j)</span></span>&#123;</span><br><span class="line">	<span class="keyword">float</span> x=<span class="number">0</span>,y=<span class="number">0</span>;</span><br><span class="line">	<span class="keyword">int</span> k;</span><br><span class="line">	<span class="keyword">for</span>(k=<span class="number">0</span>;k++&lt;<span class="number">256</span>;)&#123;</span><br><span class="line">		<span class="keyword">float</span> a=x*x-y*y+(i-<span class="number">768.0</span>)/<span class="number">512</span>;</span><br><span class="line">		y=<span class="number">2</span>*x*y+(j-<span class="number">512.0</span>)/<span class="number">512</span>;</span><br><span class="line">		x=a;</span><br><span class="line">		<span class="keyword">if</span>(x*x+y*y&gt;<span class="number">4</span>)</span><br><span class="line">			<span class="keyword">break</span>;</span><br><span class="line">		&#125;</span><br><span class="line">	<span class="keyword">return</span> <span class="built_in">log</span>(k)*<span class="number">47</span>;</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">unsigned</span> <span class="keyword">char</span> <span class="title">BL</span><span class="params">(<span class="keyword">int</span> i,<span class="keyword">int</span> j)</span></span>&#123;</span><br><span class="line">	<span class="keyword">float</span> x=<span class="number">0</span>,y=<span class="number">0</span>;</span><br><span class="line">	<span class="keyword">int</span> k;</span><br><span class="line">	<span class="keyword">for</span>(k=<span class="number">0</span>;k++&lt;<span class="number">256</span>;)&#123;</span><br><span class="line">		<span class="keyword">float</span> a=x*x-y*y+(i-<span class="number">768.0</span>)/<span class="number">512</span>;</span><br><span class="line">		y=<span class="number">2</span>*x*y+(j-<span class="number">512.0</span>)/<span class="number">512</span>;</span><br><span class="line">		x=a;</span><br><span class="line">		<span class="keyword">if</span>(x*x+y*y&gt;<span class="number">4</span>)</span><br><span class="line">			<span class="keyword">break</span>;</span><br><span class="line">		&#125;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">128</span>-<span class="built_in">log</span>(k)*<span class="number">23</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h5 id="Manuel_Kasten_也制作了一个_Mandelbrot_集的图片，与刚才不同的是，该图描绘的是_Mandelbrot_集在某处局部放大后的结果：">Manuel Kasten 也制作了一个 Mandelbrot 集的图片，与刚才不同的是，该图描绘的是 Mandelbrot 集在某处局部放大后的结果：</h5><p><img src="../../../../img/2014_08_14_4.png" alt="Manuel1"><br>它的代码如下：<br><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">unsigned</span> <span class="keyword">char</span> <span class="title">RD</span><span class="params">(<span class="keyword">int</span> i,<span class="keyword">int</span> j)</span></span>&#123;</span><br><span class="line">	<span class="keyword">double</span> a=<span class="number">0</span>,b=<span class="number">0</span>,c,d,n=<span class="number">0</span>;</span><br><span class="line">	<span class="keyword">while</span>((c=a*a)+(d=b*b)&lt;<span class="number">4</span>&amp;&amp;n++&lt;<span class="number">880</span>)&#123;</span><br><span class="line">		b=<span class="number">2</span>*a*b+j*<span class="number">8e-9</span>-<span class="number">.645411</span>;</span><br><span class="line">		a=c-d+i*<span class="number">8e-9</span>+<span class="number">.356888</span>;</span><br><span class="line">		&#125;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">255</span>*<span class="built_in">pow</span>((n-<span class="number">80</span>)/<span class="number">800</span>,<span class="number">3.</span>);</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">unsigned</span> <span class="keyword">char</span> <span class="title">GR</span><span class="params">(<span class="keyword">int</span> i,<span class="keyword">int</span> j)</span></span>&#123;</span><br><span class="line">	<span class="keyword">double</span> a=<span class="number">0</span>,b=<span class="number">0</span>,c,d,n=<span class="number">0</span>;</span><br><span class="line">	<span class="keyword">while</span>((c=a*a)+(d=b*b)&lt;<span class="number">4</span>&amp;&amp;n++&lt;<span class="number">880</span>)&#123;</span><br><span class="line">		b=<span class="number">2</span>*a*b+j*<span class="number">8e-9</span>-<span class="number">.645411</span>;</span><br><span class="line">		a=c-d+i*<span class="number">8e-9</span>+<span class="number">.356888</span>;</span><br><span class="line">		&#125;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">255</span>*<span class="built_in">pow</span>((n-<span class="number">80</span>)/<span class="number">800</span>,<span class="number">.7</span>);</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">unsigned</span> <span class="keyword">char</span> <span class="title">BL</span><span class="params">(<span class="keyword">int</span> i,<span class="keyword">int</span> j)</span></span>&#123;</span><br><span class="line">	<span class="keyword">double</span> a=<span class="number">0</span>,b=<span class="number">0</span>,c,d,n=<span class="number">0</span>;</span><br><span class="line">	<span class="keyword">while</span>((c=a*a)+(d=b*b)&lt;<span class="number">4</span>&amp;&amp;n++&lt;<span class="number">880</span>)&#123;</span><br><span class="line">		b=<span class="number">2</span>*a*b+j*<span class="number">8e-9</span>-<span class="number">.645411</span>;</span><br><span class="line">		a=c-d+i*<span class="number">8e-9</span>+<span class="number">.356888</span>;</span><br><span class="line">		&#125;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">255</span>*<span class="built_in">pow</span>((n-<span class="number">80</span>)/<span class="number">800</span>,<span class="number">.5</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h5 id="这是_Manuel_Kasten_的另一作品：">这是 Manuel Kasten 的另一作品：</h5><p><img src="../../../../img/2014_08_14_5.png" alt="Manuel2"><br>生成这张图片的代码很有意思：函数依靠 static 变量来控制绘画的进程，完全没有用到 i 和 j 这两个参数！<br><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">unsigned</span> <span class="keyword">char</span> <span class="title">RD</span><span class="params">(<span class="keyword">int</span> i,<span class="keyword">int</span> j)</span></span>&#123;</span><br><span class="line">	<span class="keyword">static</span> <span class="keyword">double</span> k;</span><br><span class="line">	k+=rand()/<span class="number">1.</span>/RAND_MAX;</span><br><span class="line">	<span class="keyword">int</span> l=k;l%=<span class="number">512</span>;</span><br><span class="line">	<span class="keyword">return</span> l&gt;<span class="number">255</span>?<span class="number">511</span>-l:l;</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">unsigned</span> <span class="keyword">char</span> <span class="title">GR</span><span class="params">(<span class="keyword">int</span> i,<span class="keyword">int</span> j)</span></span>&#123;</span><br><span class="line">	<span class="keyword">static</span> <span class="keyword">double</span> k;</span><br><span class="line">	k+=rand()/<span class="number">1.</span>/RAND_MAX;</span><br><span class="line">	<span class="keyword">int</span> l=k;l%=<span class="number">512</span>;</span><br><span class="line">	<span class="keyword">return</span> l&gt;<span class="number">255</span>?<span class="number">511</span>-l:l;</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">unsigned</span> <span class="keyword">char</span> <span class="title">BL</span><span class="params">(<span class="keyword">int</span> i,<span class="keyword">int</span> j)</span></span>&#123;</span><br><span class="line">	<span class="keyword">static</span> <span class="keyword">double</span> k;</span><br><span class="line">	k+=rand()/<span class="number">1.</span>/RAND_MAX;</span><br><span class="line">	<span class="keyword">int</span> l=k;l%=<span class="number">512</span>;</span><br><span class="line">	<span class="keyword">return</span> l&gt;<span class="number">255</span>?<span class="number">511</span>-l:l;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h5 id="这是来自_githubphagocyte_的作品：">这是来自 githubphagocyte 的作品：</h5><p><img src="../../../../img/2014_08_14_6.png" alt="githubphagocyte1"><br>它的代码如下：<br><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">unsigned</span> <span class="keyword">char</span> <span class="title">RD</span><span class="params">(<span class="keyword">int</span> i,<span class="keyword">int</span> j)</span></span>&#123;</span><br><span class="line">	<span class="keyword">float</span> s=<span class="number">3.</span>/(j+<span class="number">99</span>);</span><br><span class="line">	<span class="keyword">float</span> y=(j+<span class="built_in">sin</span>((i*i+_sq(j-<span class="number">700</span>)*<span class="number">5</span>)/<span class="number">100.</span>/DIM)*<span class="number">35</span>)*s;</span><br><span class="line">	<span class="keyword">return</span> (<span class="keyword">int</span>((i+DIM)*s+y)%<span class="number">2</span>+<span class="keyword">int</span>((DIM*<span class="number">2</span>-i)*s+y)%<span class="number">2</span>)*<span class="number">127</span>;</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">unsigned</span> <span class="keyword">char</span> <span class="title">GR</span><span class="params">(<span class="keyword">int</span> i,<span class="keyword">int</span> j)</span></span>&#123;</span><br><span class="line">	<span class="keyword">float</span> s=<span class="number">3.</span>/(j+<span class="number">99</span>);</span><br><span class="line">	<span class="keyword">float</span> y=(j+<span class="built_in">sin</span>((i*i+_sq(j-<span class="number">700</span>)*<span class="number">5</span>)/<span class="number">100.</span>/DIM)*<span class="number">35</span>)*s;</span><br><span class="line">	<span class="keyword">return</span> (<span class="keyword">int</span>(<span class="number">5</span>*((i+DIM)*s+y))%<span class="number">2</span>+<span class="keyword">int</span>(<span class="number">5</span>*((DIM*<span class="number">2</span>-i)*s+y))%<span class="number">2</span>)*<span class="number">127</span>;</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">unsigned</span> <span class="keyword">char</span> <span class="title">BL</span><span class="params">(<span class="keyword">int</span> i,<span class="keyword">int</span> j)</span></span>&#123;</span><br><span class="line">	<span class="keyword">float</span> s=<span class="number">3.</span>/(j+<span class="number">99</span>);</span><br><span class="line">	<span class="keyword">float</span> y=(j+<span class="built_in">sin</span>((i*i+_sq(j-<span class="number">700</span>)*<span class="number">5</span>)/<span class="number">100.</span>/DIM)*<span class="number">35</span>)*s;</span><br><span class="line">	<span class="keyword">return</span> (<span class="keyword">int</span>(<span class="number">29</span>*((i+DIM)*s+y))%<span class="number">2</span>+<span class="keyword">int</span>(<span class="number">29</span>*((DIM*<span class="number">2</span>-i)*s+y))%<span class="number">2</span>)*<span class="number">127</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h5 id="这是来自_githubphagocyte_的另一个作品：">这是来自 githubphagocyte 的另一个作品：</h5><p><img src="../../../../img/2014_08_14_7.png" alt="githubphagocyte"><br>这是一张使用 diffusion-limited aggregation 模型得到的图片，程序运行起来要耗费不少时间。代码很有意思：巧妙地利用宏定义，打破了函数与函数之间的界限，三段代码的字数限制便能合在一起使用了。<br><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">unsigned</span> <span class="keyword">char</span> <span class="title">RD</span><span class="params">(<span class="keyword">int</span> i,<span class="keyword">int</span> j)</span></span>&#123;</span><br><span class="line">	<span class="preprocessor">#<span class="keyword">define</span> D DIM</span></span><br><span class="line">	<span class="preprocessor">#<span class="keyword">define</span> M m[(x+D+(d==0)-(d==2))%D][(y+D+(d==1)-(d==3))%D]</span></span><br><span class="line">	<span class="preprocessor">#<span class="keyword">define</span> R rand()%D</span></span><br><span class="line">	<span class="preprocessor">#<span class="keyword">define</span> B m[x][y]</span></span><br><span class="line">	<span class="keyword">return</span>(i+j)?<span class="number">256</span>-(BL(i,j))/<span class="number">2</span>:<span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">unsigned</span> <span class="keyword">char</span> <span class="title">GR</span><span class="params">(<span class="keyword">int</span> i,<span class="keyword">int</span> j)</span></span>&#123;</span><br><span class="line"><span class="preprocessor">#<span class="keyword">define</span> A static int m[D][D],e,x,y,d,c[4],f,n;<span class="keyword">if</span>(i+j&lt;1)&#123;for(d=D*D;d;d--)&#123;m[d%D][d/D]=d%6?0:rand()%2000?1:255;&#125;for(n=1</span></span><br><span class="line"><span class="keyword">return</span> RD(i,j);</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">unsigned</span> <span class="keyword">char</span> <span class="title">BL</span><span class="params">(<span class="keyword">int</span> i,<span class="keyword">int</span> j)</span></span>&#123;</span><br><span class="line">A;n;n++)&#123;x=R;y=R;<span class="keyword">if</span>(B==<span class="number">1</span>)&#123;f=<span class="number">1</span>;<span class="keyword">for</span>(d=<span class="number">0</span>;d&lt;<span class="number">4</span>;d++)&#123;c[d]=M;f=f&lt;c[d]?c[d]:f;&#125;<span class="keyword">if</span>(f&gt;<span class="number">2</span>)&#123;B=f-<span class="number">1</span>;&#125;<span class="keyword">else</span>&#123;++e%=<span class="number">4</span>;d=e;<span class="keyword">if</span>(!c[e])&#123;B=<span class="number">0</span>;M=<span class="number">1</span>;&#125;&#125;&#125;&#125;&#125;<span class="keyword">return</span> m[i][j];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h5 id="最后这张图来自_Eric_Tressler_：">最后这张图来自 Eric Tressler ：</h5><p><img src="../../../../img/2014_08_14_8.png" alt="Eric"><br>这是由 logistic 映射得到的 Feigenbaum 分岔图。和刚才一样，对应的代码也巧妙地利用了宏定义来节省字符：<br><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">unsigned</span> <span class="keyword">char</span> <span class="title">RD</span><span class="params">(<span class="keyword">int</span> i,<span class="keyword">int</span> j)</span></span>&#123;</span><br><span class="line">	<span class="preprocessor">#<span class="keyword">define</span> A float a=0,b,k,r,x</span></span><br><span class="line">	<span class="preprocessor">#<span class="keyword">define</span> B int e,o</span></span><br><span class="line">	<span class="preprocessor">#<span class="keyword">define</span> C(x) x&gt;255?255:x</span></span><br><span class="line">	<span class="preprocessor">#<span class="keyword">define</span> R return</span></span><br><span class="line">	<span class="preprocessor">#<span class="keyword">define</span> D DIM</span></span><br><span class="line">	<span class="function">R <span class="title">BL</span><span class="params">(i,j)</span>*<span class="params">(D-i)</span>/D</span>;</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">unsigned</span> <span class="keyword">char</span> <span class="title">GR</span><span class="params">(<span class="keyword">int</span> i,<span class="keyword">int</span> j)</span></span>&#123;</span><br><span class="line">	<span class="preprocessor">#<span class="keyword">define</span> E DM1</span></span><br><span class="line">	<span class="preprocessor">#<span class="keyword">define</span> F static float</span></span><br><span class="line">	<span class="preprocessor">#<span class="keyword">define</span> G for(</span></span><br><span class="line">	<span class="preprocessor">#<span class="keyword">define</span> H r=a*1.6/D+2.4;x=1.0001*b/D</span></span><br><span class="line">	<span class="function">R <span class="title">BL</span><span class="params">(i,j)</span>*<span class="params">(D-j/2)</span>/D</span>;</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">unsigned</span> <span class="keyword">char</span> <span class="title">BL</span><span class="params">(<span class="keyword">int</span> i,<span class="keyword">int</span> j)</span></span>&#123;</span><br><span class="line">F c[D][D];<span class="keyword">if</span>(i+j&lt;<span class="number">1</span>)&#123;A;B;G;a&lt;D;a+=<span class="number">0.1</span>)&#123;G b=<span class="number">0</span>;b&lt;D;b++)&#123;H;G k=<span class="number">0</span>;k&lt;D;k++)&#123;x=r*x*(<span class="number">1</span>-x);<span class="keyword">if</span>(k&gt;D/<span class="number">2</span>)&#123;e=a;o=(E*x);c[e][o]+=<span class="number">0.01</span>;&#125;&#125;&#125;&#125;&#125;<span class="function">R <span class="title">C</span><span class="params">(c[j][i])</span>*i/D</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+
+      </div>
+      <footer class="article-footer">
+        <a data-url="hppt://sammer0.github.io/2014/08/14/Matrix67用三段140字符以内的代码生成一张1024×1024的图片/" data-id="ci7x4ui280000vkeaix5mx12i" class="article-share-link">分享到</a>
+        
+        
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Matrix67/">Matrix67</a></li></ul>
+
+      </footer>
+    </div>
+  </article>
+  
+
+            </div>
+          </section>
+          <aside id="sidebar">
+  <a class="sidebar-toggle" title="Expand Sidebar"><i class="toggle icon"></i></a>
+  <div class="sidebar-top">
+    <p>关注我 :</p>
+    <ul class="social-links">
+      
+        <li><a class="social-tooltip" title="github" href="https://github.com/SAmmer0/SAmmer0.github.io"><i id="icon-github" class="icon"></i></a></li>
+      
+        <li><a class="social-tooltip" title="weibo" href="http://weibo.com/3226459660/profile?topnav=1&wvr=6"><i id="icon-weibo" class="icon"></i></a></li>
+      
+    </ul>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2014/11/07/Minecraft自动双开门/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">下一篇</strong>
+      <p class="article-nav-title">
+        
+          Minecraft自动双开门
+        
+      </p>
+      <i class="icon" id="icon-chevron-right"></i>
+    </a>
+  
+  
+    <a href="/2014/08/13/这个博客是如何搭建的/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">上一篇</strong>
+      <p class="article-nav-title">这个博客是如何搭建的</p>
+      <i class="icon" id="icon-chevron-left"></i>
+    </a>
+  
+</nav>
+
+  
+  <div class="widgets-container">
+    
+      
+  <div class="widget-wrap">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget">
+      <ul id="recent-post">
+        
+          <li>
+            <div class="item-thumbnail">
+              <a href="/2014/11/07/Minecraft自动双开门/" class="thumbnail">
+  
+    <span style="background-image:url(../../../../img/2014-11-07_23.24.20.png
+)" alt="Minecraft自动双开门" class="thumbnail-image"></span>
+  
+
+</a>
+            </div>
+            <div class="item-inner">
+              <p class="item-category"></p>
+              <p class="item-title"><a href="/2014/11/07/Minecraft自动双开门/" class="title">Minecraft自动双开门</a></p>
+              <p class="item-date"><time datetime="2014-11-07T15:16:34.000Z" itemprop="datePublished">11 07 2014</time></p>
+            </div>
+          </li>
+        
+          <li>
+            <div class="item-thumbnail">
+              <a href="/2014/08/14/Matrix67用三段140字符以内的代码生成一张1024×1024的图片/" class="thumbnail">
+  
+    <span style="background-image:url(../../../../img/2014_08_14_1.png
+)" alt="Matrix67:用三段140字符以内的代码生成一张1024×1024的图片" class="thumbnail-image"></span>
+  
+
+</a>
+            </div>
+            <div class="item-inner">
+              <p class="item-category"></p>
+              <p class="item-title"><a href="/2014/08/14/Matrix67用三段140字符以内的代码生成一张1024×1024的图片/" class="title">Matrix67:用三段140字符以内的代码生成一张1024×1024的图片</a></p>
+              <p class="item-date"><time datetime="2014-08-14T15:14:59.000Z" itemprop="datePublished">08 14 2014</time></p>
+            </div>
+          </li>
+        
+          <li>
+            <div class="item-thumbnail">
+              <a href="/2014/08/13/这个博客是如何搭建的/" class="thumbnail">
+  
+    <span class="thumbnail-image thumbnail-none"></span>
+  
+
+</a>
+            </div>
+            <div class="item-inner">
+              <p class="item-category"></p>
+              <p class="item-title"><a href="/2014/08/13/这个博客是如何搭建的/" class="title">这个博客是如何搭建的</a></p>
+              <p class="item-date"><time datetime="2014-08-13T15:31:00.000Z" itemprop="datePublished">08 13 2014</time></p>
+            </div>
+          </li>
+        
+          <li>
+            <div class="item-thumbnail">
+              <a href="/2014/07/23/由某公知引起的感想/" class="thumbnail">
+  
+    <span style="background-image:url(../../../../img/2014_07_23.jpg
+)" alt="由某公知引起的感想" class="thumbnail-image"></span>
+  
+
+</a>
+            </div>
+            <div class="item-inner">
+              <p class="item-category"></p>
+              <p class="item-title"><a href="/2014/07/23/由某公知引起的感想/" class="title">由某公知引起的感想</a></p>
+              <p class="item-date"><time datetime="2014-07-23T04:49:58.000Z" itemprop="datePublished">07 23 2014</time></p>
+            </div>
+          </li>
+        
+          <li>
+            <div class="item-thumbnail">
+              <a href="/2014/07/12/为什么要写博客/" class="thumbnail">
+  
+    <span class="thumbnail-image thumbnail-none"></span>
+  
+
+</a>
+            </div>
+            <div class="item-inner">
+              <p class="item-category"></p>
+              <p class="item-title"><a href="/2014/07/12/为什么要写博客/" class="title">为什么要写博客</a></p>
+              <p class="item-date"><time datetime="2014-07-12T09:23:09.000Z" itemprop="datePublished">07 12 2014</time></p>
+            </div>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+    
+      
+
+    
+      
+  <div class="widget-wrap widget-list">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/11/">十一月 2014</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/08/">八月 2014</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/07/">七月 2014</a><span class="archive-list-count">3</span></li></ul>
+    </div>
+  </div>
+
+
+    
+      
+  <div class="widget-wrap widget-list">
+    <h3 class="widget-title">标签</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Matrix67/">Matrix67</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Minecraft/">Minecraft</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/想法/">想法</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/技术/">技术</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/食物烹调/">食物烹调</a><span class="tag-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+
+    
+      
+  <div class="widget-wrap widget-float">
+    <h3 class="widget-title">标签云</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/Matrix67/" style="font-size: 10px;">Matrix67</a><a href="/tags/Minecraft/" style="font-size: 10px;">Minecraft</a><a href="/tags/想法/" style="font-size: 20px;">想法</a><a href="/tags/技术/" style="font-size: 10px;">技术</a><a href="/tags/食物烹调/" style="font-size: 10px;">食物烹调</a>
+    </div>
+  </div>
+
+
+    
+      
+  <div class="widget-wrap widget-list">
+    <h3 class="widget-title">链接</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="http://hexo.io">Hexo</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+
+    
+  </div>
+</aside>
+        </div>
+      </div>
+    </div>
+    <footer id="footer">
+  
+  <div class="container">
+    <div class="container-inner">
+      <a id="back-to-top" href="javascript:;"><i class="icon" id="icon-angle-up"></i></a>
+      <div class="credit">
+        <h1 class="logo-wrap">
+          <a href="/" class="logo"></a>
+        </h1>
+        <p>&copy; 2015 Hao Li</p>
+        <p>Powered by <a href="//hexo.io/" target="_blank">Hexo</a>. Theme by <a href="//github.com/ppoffice" target="_blank">PPOffice</a></p>
+      </div>
+    </div>
+  </div>
+</footer>
+    
+
+
+  <script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+
+
+
+  <script src="/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script>
+
+
+
+  <script src="/scrollLoading/jquery.scrollLoading.js" type="text/javascript"></script>
+  <script src="/scrollLoading/main.js" type="text/javascript"></script>
+
+
+<script src="/js/html-patch.js" type="text/javascript"></script>
+<script src="/js/script.js" type="text/javascript"></script>
+
+  </div>
+</body>
+</html>
